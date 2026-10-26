@@ -1,0 +1,20 @@
+{
+  "name": "oaa-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OAA Protocol agents: CORE, AQL, ZEN, SENTINEL, SCOUT, PROOF, x402 and buy",
+  "scripts": {
+    "build": "esbuild src/worker.js --bundle --format=esm --platform=neutral --main-fields=module,main --minify-syntax --outfile=dist/worker.js",
+    "test": "node test/t.mjs && node test/t3.mjs && node test/t4.mjs && node test/t5.mjs"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.8.0",
+    "@noble/secp256k1": "^2.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "ethers": "^6.13.4",
+    "wrangler": "^4.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+name = "oaa-worker"
+main = "dist/worker.js"
+compatibility_date = "2026-10-01"
+
+[ai]
+binding = "AI"
+
+[[kv_namespaces]]
+binding = "MEDIA"
+id = "YOUR_KV_NAMESPACE_ID"
+
+[triggers]
+crons = ["0 * * * *"]   # hourly PROOF batch
+
+# Public settings. Secrets (KEEPER_KEY, RELAY_API_KEY, FACILITATOR_KEY) are added with `wrangler secret put`, never here.
+[vars]
+BASE_RPC = "https://mainnet.base.org"
+SWAP_FEE_BPS = "30"
+BUY_FEE_BPS = "30"

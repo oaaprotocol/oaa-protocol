@@ -1,0 +1,12 @@
+{
+  "_help": "Fill in when the locks exist. wallet = Base address (0x...). lock_url = link to the lock proof (UNCX, PinkLock, Safe, BaseScan). Leave empty until ready. The website and Sia both read this file.",
+  "token": { "address": "" },
+  "allocations": [
+    { "key": "liquidity", "name": "Liquidity Pool",                "wallet": "", "lock_label": "UNCX",     "lock_url": "" },
+    { "key": "reserve",   "name": "Reserved Liquidity / Treasury", "wallet": "", "lock_label": "Multisig", "lock_url": "" },
+    { "key": "ecosystem", "name": "Ecosystem / Development",       "wallet": "", "lock_label": "Vesting",  "lock_url": "" },
+    { "key": "marketing", "name": "Marketing / Growth",            "wallet": "", "lock_label": "Vesting",  "lock_url": "" },
+    { "key": "team",      "name": "Team",                          "wallet": "", "lock_label": "PinkLock", "lock_url": "" },
+    { "key": "community", "name": "Community / Airdrops",          "wallet": "", "lock_label": "",         "lock_url": "" }
+  ]
+}

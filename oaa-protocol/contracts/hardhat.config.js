@@ -1,0 +1,1 @@
+module.exports = { networks: { hardhat: { allowUnlimitedContractSize: true, throwOnTransactionFailures: false, throwOnCallFailures: true, chainId: 8453, accounts: { count: 6, accountsBalance: '100000000000000000000000' } } } };
